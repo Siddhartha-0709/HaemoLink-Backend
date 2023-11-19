@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.0/pikaday.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.0/css/pikaday.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.6/dist/flatpickr.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.6/dist/flatpickr.min.css"
+    />
+    <title>Blood Donation Camp</title>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navigation Section -->
+    <header>
+      <nav
+        class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800"
+      >
+        <div
+          class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
+        >
+          <a href="/" class="flex items-center">
+            <img
+              src="https://flowbite.com/docs/images/logo.svg"
+              class="mr-3 h-6 sm:h-9"
+              alt="Flowbite Logo"
+            />
+            <span
+              class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+            >
+              Blood Donation Camp
+            </span>
+          </a>
+
+          <div class="flex items-center lg:order-2">
+            <a
+              href="#"
+              class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+              >Get started</a
+            >
+            <button
+              data-collapse-toggle="mobile-menu-2"
+              type="button"
+              class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="mobile-menu-2"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <svg
+                class="hidden w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          <div
+            class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+            id="mobile-menu-2"
+          >
+            <ul
+              class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  >Donate Blood</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  >How It Works</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  >Events</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Content Section (Continued) -->
+    <div class="rounded-lg bg-white p-8 m-4" style="background-color: #fff3da">
+      <form
+        action="/post_campaign"
+        method="post"
+        class="bg-white shadow-md rounded-lg p-6"
+      >
+        <div class="mb-4">
+          <label
+            for="organization"
+            class="block text-sm font-medium text-gray-700"
+          >
+            Organization Name
+          </label>
+          <input
+            type="text"
+            id="organization"
+            name="organisation"
+            placeholder="Enter organization name"
+            class="border border-gray-300 px-4 py-2 rounded-md w-full"
+            required
+          />
+        </div>
+
+        <div class="mb-4">
+          <label for="state" class="block text-sm font-medium text-gray-700">
+            State
+          </label>
+          <select
+            id="state"
+            name="state"
+            class="border border-gray-300 px-4 py-2 rounded-md w-full"
+            required
+            onchange="populateDistricts()"
+          >
+            <!-- List of Indian States -->
+            <option disabled value="" selected>Select a state</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+            <!-- Add more states as needed -->
+          </select>
+        </div>
+
+        <div class="mb-4">
+          <label for="district" class="block text-sm font-medium text-gray-700">
+            District
+          </label>
+          <select
+            id="district"
+            name="district"
+            class="border border-gray-300 px-4 py-2 rounded-md w-full"
+            required
+          >
+            <!-- Districts of the selected state will be populated here -->
+            <option disabled value="" selected>Select a district</option>
+          </select>
+        </div>
+        <div class="my-4 mx-2">
+          <label
+            for="datepicker"
+            class="block text-sm font-medium text-gray-700 dark:text-gray-300"
+            >Select a date:</label
+          >
+          <input
+            type="text"
+            id="datepicker"
+            name="date"
+            class="mt-2 p-2 border rounded-md w-full"
+            placeholder="YYYY-MM-DD"
+          />
+        </div>
+
+        <!-- <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            var picker = new Pikaday({
+              field: document.getElementById("datepicker"),
+            });
+          });
+        </script> -->
+
+        <!-- Time selection section -->
+        <div class="my-4 mx-2">
+          <label
+            for="startTime"
+            class="block text-sm font-medium text-gray-700 dark:text-gray-300"
+            >Start Time:</label
+          >
+          <input
+            type="text"
+            id="startTime"
+            name="start_time"
+            class="mt-1 p-2 border rounded-md w-full"
+            placeholder="Select start time"
+          />
+        </div>
+
+        <div class="my-4 mx-2">
+          <label
+            for="endTime"
+            class="block text-sm font-medium text-gray-700 dark:text-gray-300"
+            >End Time:</label
+          >
+          <input
+            type="text"
+            id="endTime"
+            name="end_time"
+            class="mt-1 p-2 border rounded-md w-full"
+            placeholder="Select end time"
+          />
+        </div>
+
+        <!-- ... -->
+
+        <!-- <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            var datePicker = new Pikaday({
+              field: document.getElementById("datepicker"),
+            });
+
+            flatpickr("#startTime", {
+              enableTime: true,
+              noCalendar: true,
+              dateFormat: "H:i",
+            });
+
+            flatpickr("#endTime", {
+              enableTime: true,
+              noCalendar: true,
+              dateFormat: "H:i",
+            });
+          });
+        </script> -->
+
+        <div class="mb-4">
+          <label for="legalDoc" class="block text-sm font-medium text-gray-700">
+            Enter Doctor's Name
+          </label>
+          <input
+            type="text"
+            id="legalDoc"
+            name="doctor"
+            placeholder="Name of the Doctor"
+            class="border border-gray-300 px-4 py-2 rounded-md w-full"
+            required
+          />
+        </div>
+
+        <div class="mb-4">
+          <label for="legalDoc" class="block text-sm font-medium text-gray-700">
+            Legal Document Number or Google Drive Link
+          </label>
+          <input
+            type="text"
+            id="legalDoc"
+            name="document"
+            placeholder="Enter legal document number or Google Drive link"
+            class="border border-gray-300 px-4 py-2 rounded-md w-full"
+            required
+          />
+        </div>
+
+        <button
+          type="submit"
+          class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+
+    <!-- Additional Elements from Second Code -->
+    <div class="container mx-auto mt-8">
+      <form id="application-form" method="GET">
+        <!-- Add form fields and styling from the second code snippet -->
+      </form>
+    </div>
+
+    <script>
+      function populateDistricts() {
+        // Add your JavaScript logic to fetch districts based on the selected state
+        // You can use an API or pre-defined data to populate the districts dynamically
+        // For now, let's assume a static list for each state
+        const stateSelect = document.getElementById("state");
+        const districtSelect = document.getElementById("district");
+
+        // Clear previous options
+        districtSelect.innerHTML =
+          '<option disabled value="" selected>Select a district</option>';
+
+        // Get selected state
+        const selectedState = stateSelect.value;
+
+        // Define districts based on the selected state
+        const districtOptions = getDistricts(selectedState);
+
+        // Add district options to the select element
+        districtOptions.forEach((district) => {
+          const option = document.createElement("option");
+          option.value = district;
+          option.text = district;
+          districtSelect.appendChild(option);
+        });
+      }
+
+      // Example function to get districts based on the selected state
+      function getDistricts(state) {
+        // You can replace this with actual data fetching logic based on the selected state
+        // For now, using static data
+        const districtData = {
+          "Andhra Pradesh": [
+            "Anantapur",
+            "Chittoor",
+            "East Godavari",
+            "Guntur",
+            "Krishna",
+            "Kurnool",
+            "Prakasam",
+            "Srikakulam",
+            "Visakhapatnam",
+            "Vizianagaram",
+            "West Godavari",
+            "YSR Kadapa",
+          ],
+          "Arunachal Pradesh": [
+            "Tawang",
+            "West Kameng",
+            "East Kameng",
+            "Papum Pare",
+            "Kurung Kumey",
+            "Kra Daadi",
+            "Lower Subansiri",
+            "Upper Subansiri",
+            "West Siang",
+            "East Siang",
+            "Siang",
+            "Upper Siang",
+          ],
+          Assam: [
+            "Baksa",
+            "Barpeta",
+            "Biswanath",
+            "Bongaigaon",
+            "Cachar",
+            "Charaideo",
+            "Chirang",
+            "Darrang",
+            "Dhemaji",
+            "Dhubri",
+            "Dibrugarh",
+            "Dima Hasao",
+            "Goalpara",
+            "Golaghat",
+            "Hailakandi",
+            "Hojai",
+            "Jorhat",
+            "Kamrup",
+            "Kamrup Metropolitan",
+            "Karbi Anglong",
+            "Karimganj",
+            "Kokrajhar",
+            "Lakhimpur",
+            "Majuli",
+            "Morigaon",
+            "Nagaon",
+            "Nalbari",
+            "Sivasagar",
+            "Sonitpur",
+            "South Salmara-Mankachar",
+            "Tinsukia",
+            "Udalguri",
+            "West Karbi Anglong",
+          ],
+
+          Bihar: [
+            "Araria",
+            "Arwal",
+            "Aurangabad",
+            "Banka",
+            "Begusarai",
+            "Bhagalpur",
+            "Bhojpur",
+            "Buxar",
+            "Darbhanga",
+            "East Champaran",
+            "Gaya",
+            "Gopalganj",
+            "Jamui",
+            "Jehanabad",
+            "Kaimur",
+            "Katihar",
+            "Khagaria",
+            "Kishanganj",
+            "Lakhisarai",
+            "Madhepura",
+            "Madhubani",
+            "Munger",
+            "Muzaffarpur",
+            "Nalanda",
+            "Nawada",
+            "Patna",
+            "Purnia",
+            "Rohtas",
+            "Saharsa",
+            "Samastipur",
+            "Saran",
+            "Sheikhpura",
+            "Sheohar",
+            "Sitamarhi",
+            "Siwan",
+            "Supaul",
+            "Vaishali",
+            "West Champaran",
+          ],
+          Chhattisgarh: [
+            "Balod",
+            "Baloda Bazar",
+            "Balrampur",
+            "Bastar",
+            "Bemetara",
+            "Bijapur",
+            "Bilaspur",
+            "Dantewada",
+            "Dhamtari",
+            "Durg",
+            "Gariaband",
+            "Janjgir-Champa",
+            "Jashpur",
+            "Kabirdham",
+            "Kanker",
+            "Kondagaon",
+            "Korba",
+            "Koriya",
+            "Mahasamund",
+            "Mungeli",
+            "Narayanpur",
+            "Raigarh",
+            "Raipur",
+            "Rajnandgaon",
+            "Sukma",
+            "Surajpur",
+            "Surguja",
+          ],
+          Goa: ["North Goa", "South Goa"],
+          Gujarat: [
+            "Ahmedabad",
+            "Amreli",
+            "Anand",
+            "Aravalli",
+            "Banaskantha",
+            "Bharuch",
+            "Bhavnagar",
+            "Botad",
+            "Chhota Udaipur",
+            "Dahod",
+            "Dang",
+            "Devbhoomi Dwarka",
+            "Gandhinagar",
+            "Gir Somnath",
+            "Jamnagar",
+            "Junagadh",
+            "Kheda",
+            "Kutch",
+            "Mahisagar",
+            "Mehsana",
+            "Morbi",
+            "Narmada",
+            "Navsari",
+            "Panchmahal",
+            "Patan",
+            "Porbandar",
+            "Rajkot",
+            "Sabarkantha",
+            "Surat",
+            "Surendranagar",
+            "Tapi",
+            "Vadodara",
+            "Valsad",
+          ],
+          Haryana: [
+            "Ambala",
+            "Bhiwani",
+            "Charkhi Dadri",
+            "Faridabad",
+            "Fatehabad",
+            "Gurugram",
+            "Hisar",
+            "Jhajjar",
+            "Jind",
+            "Kaithal",
+            "Karnal",
+            "Kurukshetra",
+            "Mahendragarh",
+            "Nuh",
+            "Palwal",
+            "Panchkula",
+            "Panipat",
+            "Rewari",
+            "Rohtak",
+            "Sirsa",
+            "Sonipat",
+            "Yamunanagar",
+          ],
+          "Himachal Pradesh": [
+            "Bilaspur",
+            "Chamba",
+            "Hamirpur",
+            "Kangra",
+            "Kinnaur",
+            "Kullu",
+            "Lahaul-Spiti",
+            "Mandi",
+            "Shimla",
+            "Sirmaur",
+            "Solan",
+            "Una",
+          ],
+          Jharkhand: [
+            "Bokaro",
+            "Chatra",
+            "Deoghar",
+            "Dhanbad",
+            "Dumka",
+            "East Singhbhum",
+            "Garhwa",
+            "Giridih",
+            "Godda",
+            "Gumla",
+            "Hazaribagh",
+            "Jamtara",
+            "Khunti",
+            "Koderma",
+            "Latehar",
+            "Lohardaga",
+            "Pakur",
+            "Palamu",
+            "Ramgarh",
+            "Ranchi",
+            "Sahibganj",
+            "Seraikela-Kharsawan",
+            "Simdega",
+            "West Singhbhum",
+          ],
+          Karnataka: [
+            "Bagalkot",
+            "Ballari",
+            "Belagavi",
+            "Bengaluru Rural",
+            "Bengaluru Urban",
+            "Bidar",
+            "Chamarajanagar",
+            "Chikkaballapur",
+            "Chikkamagaluru",
+            "Chitradurga",
+            "Dakshina Kannada",
+            "Davangere",
+            "Dharwad",
+            "Gadag",
+            "Hassan",
+            "Haveri",
+            "Kalaburagi",
+            "Kodagu",
+            "Kolar",
+            "Koppal",
+            "Mandya",
+            "Mysuru",
+            "Raichur",
+            "Ramanagara",
+            "Shivamogga",
+            "Tumakuru",
+            "Udupi",
+            "Uttara Kannada",
+            "Vijayapura",
+            "Yadgir",
+          ],
+          Kerala: [
+            "Alappuzha",
+            "Ernakulam",
+            "Idukki",
+            "Kannur",
+            "Kasaragod",
+            "Kollam",
+            "Kottayam",
+            "Kozhikode",
+            "Malappuram",
+            "Palakkad",
+            "Pathanamthitta",
+            "Thiruvananthapuram",
+            "Thrissur",
+            "Wayanad",
+          ],
+          "Madhya Pradesh": [
+            "Agar Malwa",
+            "Alirajpur",
+            "Anuppur",
+            "Ashoknagar",
+            "Balaghat",
+            "Barwani",
+            "Betul",
+            "Bhind",
+            "Bhopal",
+            "Burhanpur",
+            "Chhatarpur",
+            "Chhindwara",
+            "Damoh",
+            "Datia",
+            "Dewas",
+            "Dhar",
+            "Dindori",
+            "Guna",
+            "Gwalior",
+            "Harda",
+            "Hoshangabad",
+            "Indore",
+            "Jabalpur",
+            "Jhabua",
+            "Katni",
+            "Khandwa",
+            "Khargone",
+            "Mandla",
+            "Mandsaur",
+            "Morena",
+            "Narsinghpur",
+            "Neemuch",
+            "Panna",
+            "Raisen",
+            "Rajgarh",
+            "Ratlam",
+            "Rewa",
+            "Sagar",
+            "Satna",
+            "Sehore",
+            "Seoni",
+            "Shahdol",
+            "Shajapur",
+            "Sheopur",
+            "Shivpuri",
+            "Sidhi",
+            "Singrauli",
+            "Tikamgarh",
+            "Ujjain",
+            "Umaria",
+            "Vidisha",
+          ],
+          Maharashtra: [
+            "Ahmednagar",
+            "Akola",
+            "Amravati",
+            "Aurangabad",
+            "Beed",
+            "Bhandara",
+            "Buldhana",
+            "Chandrapur",
+            "Dhule",
+            "Gadchiroli",
+            "Gondia",
+            "Hingoli",
+            "Jalgaon",
+            "Jalna",
+            "Kolhapur",
+            "Latur",
+            "Mumbai City",
+            "Mumbai Suburban",
+            "Nagpur",
+            "Nanded",
+            "Nandurbar",
+            "Nashik",
+            "Osmanabad",
+            "Palghar",
+            "Parbhani",
+            "Pune",
+            "Raigad",
+            "Ratnagiri",
+            "Sangli",
+            "Satara",
+            "Sindhudurg",
+            "Solapur",
+            "Thane",
+            "Wardha",
+            "Washim",
+            "Yavatmal",
+          ],
+          Manipur: [
+            "Bishnupur",
+            "Chandel",
+            "Churachandpur",
+            "Imphal East",
+            "Imphal West",
+            "Jiribam",
+            "Kakching",
+            "Kamjong",
+            "Kangpokpi",
+            "Noney",
+            "Pherzawl",
+            "Senapati",
+            "Tamenglong",
+            "Tengnoupal",
+            "Thoubal",
+            "Ukhrul",
+          ],
+          Meghalaya: [
+            "East Garo Hills",
+            "East Jaintia Hills",
+            "East Khasi Hills",
+            "North Garo Hills",
+            "Ri-Bhoi",
+            "South Garo Hills",
+            "South West Garo Hills",
+            "South West Khasi Hills",
+            "West Garo Hills",
+            "West Jaintia Hills",
+            "West Khasi Hills",
+          ],
+          Mizoram: [
+            "Aizawl",
+            "Champhai",
+            "Hnahthial",
+            "Khawzawl",
+            "Kolasib",
+            "Lawngtlai",
+            "Lunglei",
+            "Mamit",
+            "Saiha",
+            "Serchhip",
+          ],
+          Nagaland: [
+            "Dimapur",
+            "Kiphire",
+            "Kohima",
+            "Longleng",
+            "Mokokchung",
+            "Mon",
+            "Peren",
+            "Phek",
+            "Tuensang",
+            "Wokha",
+            "Zunheboto",
+          ],
+          Odisha: [
+            "Angul",
+            "Balangir",
+            "Balasore",
+            "Bargarh",
+            "Bhadrak",
+            "Bhubaneswar",
+            "Boudh",
+            "Cuttack",
+            "Deogarh",
+            "Dhenkanal",
+            "Gajapati",
+            "Ganjam",
+            "Jagatsinghpur",
+            "Jajpur",
+            "Jharsuguda",
+            "Kalahandi",
+            "Kandhamal",
+            "Kendrapara",
+            "Kendujhar",
+            "Khordha",
+            "Koraput",
+            "Malkangiri",
+            "Mayurbhanj",
+            "Nabarangpur",
+            "Nayagarh",
+            "Nuapada",
+            "Patia",
+            "Puri",
+            "Rayagada",
+            "Sambalpur",
+            "Subarnapur",
+            "Sundargarh",
+          ],
+          Punjab: [
+            "Amritsar",
+            "Barnala",
+            "Bathinda",
+            "Faridkot",
+            "Fatehgarh Sahib",
+            "Fazilka",
+            "Ferozepur",
+            "Gurdaspur",
+            "Hoshiarpur",
+            "Jalandhar",
+            "Kapurthala",
+            "Ludhiana",
+            "Mansa",
+            "Moga",
+            "Muktsar",
+            "Pathankot",
+            "Patiala",
+            "Rupnagar",
+            "Sahibzada Ajit Singh Nagar",
+            "Sangrur",
+            "Shahid Bhagat Singh Nagar",
+            "Sri Muktsar Sahib",
+            "Tarn Taran",
+          ],
+          Rajasthan: [
+            "Ajmer",
+            "Alwar",
+            "Banswara",
+            "Baran",
+            "Barmer",
+            "Bharatpur",
+            "Bhilwara",
+            "Bikaner",
+            "Bundi",
+            "Chittorgarh",
+            "Churu",
+            "Dausa",
+            "Dholpur",
+            "Dungarpur",
+            "Hanumangarh",
+            "Jaipur",
+            "Jaisalmer",
+            "Jalore",
+            "Jhalawar",
+            "Jhunjhunu",
+            "Jodhpur",
+            "Karauli",
+            "Kota",
+            "Nagaur",
+            "Pali",
+            "Pratapgarh",
+            "Rajsamand",
+            "Sawai Madhopur",
+            "Sikar",
+            "Sirohi",
+            "Sri Ganganagar",
+            "Tonk",
+            "Udaipur",
+          ],
+          Sikkim: [
+            "East Sikkim",
+            "North Sikkim",
+            "South Sikkim",
+            "West Sikkim",
+          ],
+          "Tamil Nadu": [
+            "Ariyalur",
+            "Chengalpattu",
+            "Chennai",
+            "Coimbatore",
+            "Cuddalore",
+            "Dharmapuri",
+            "Dindigul",
+            "Erode",
+            "Kallakurichi",
+            "Kanchipuram",
+            "Kanyakumari",
+            "Karur",
+            "Krishnagiri",
+            "Madurai",
+            "Nagapattinam",
+            "Namakkal",
+            "Nilgiris",
+            "Perambalur",
+            "Pudukkottai",
+            "Ramanathapuram",
+            "Ranipet",
+            "Salem",
+            "Sivaganga",
+            "Tenkasi",
+            "Thanjavur",
+            "Theni",
+            "Thoothukudi",
+            "Tiruchirappalli",
+            "Tirunelveli",
+            "Tirupathur",
+            "Tiruppur",
+            "Tiruvallur",
+            "Tiruvannamalai",
+            "Tiruvarur",
+            "Vellore",
+            "Viluppuram",
+            "Virudhunagar",
+          ],
+          Telangana: [
+            "Adilabad",
+            "Bhadradri Kothagudem",
+            "Hyderabad",
+            "Jagtial",
+            "Jangaon",
+            "Jayashankar Bhupalapally",
+            "Jogulamba Gadwal",
+            "Kamareddy",
+            "Karimnagar",
+            "Khammam",
+            "Komaram Bheem Asifabad",
+            "Mahabubabad",
+            "Mahabubnagar",
+            "Mancherial",
+            "Medak",
+            "Medchal-Malkajgiri",
+            "Mulugu",
+            "Nagarkurnool",
+            "Nalgonda",
+            "Nirmal",
+            "Nizamabad",
+            "Peddapalli",
+            "Rajanna Sircilla",
+            "Rangareddy",
+            "Sangareddy",
+            "Siddipet",
+            "Suryapet",
+            "Vikarabad",
+            "Wanaparthy",
+            "Warangal Rural",
+            "Warangal Urban",
+            "Yadadri Bhuvanagiri",
+          ],
+          Tripura: [
+            "Dhalai",
+            "Gomati",
+            "Khowai",
+            "North Tripura",
+            "Sepahijala",
+            "South Tripura",
+            "Unakoti",
+            "West Tripura",
+          ],
+          "Uttar Pradesh": [
+            "Agra",
+            "Aligarh",
+            "Ambedkar Nagar",
+            "Amethi",
+            "Amroha",
+            "Auraiya",
+            "Ayodhya",
+            "Azamgarh",
+            "Baghpat",
+            "Bahraich",
+            "Ballia",
+            "Balrampur",
+            "Banda",
+            "Barabanki",
+            "Bareilly",
+            "Basti",
+            "Bhadohi",
+            "Bijnor",
+            "Budaun",
+            "Bulandshahr",
+            "Chandauli",
+            "Chitrakoot",
+            "Deoria",
+            "Etah",
+            "Etawah",
+            "Farrukhabad",
+            "Fatehpur",
+            "Firozabad",
+            "Gautam Buddh Nagar",
+            "Ghaziabad",
+            "Ghazipur",
+            "Gonda",
+            "Gorakhpur",
+            "Hamirpur",
+            "Hapur",
+            "Hardoi",
+            "Hathras",
+            "Jalaun",
+            "Jaunpur",
+            "Jhansi",
+            "Kannauj",
+            "Kanpur Dehat",
+            "Kanpur Nagar",
+            "Kasganj",
+            "Kaushambi",
+            "Kushinagar",
+            "Lakhimpur Kheri",
+            "Lalitpur",
+            "Lucknow",
+            "Maharajganj",
+            "Mahoba",
+            "Mainpuri",
+            "Mathura",
+            "Mau",
+            "Meerut",
+            "Mirzapur",
+            "Moradabad",
+            "Muzaffarnagar",
+            "Pilibhit",
+            "Pratapgarh",
+            "Prayagraj",
+            "Rae Bareli",
+            "Rampur",
+            "Saharanpur",
+            "Sambhal",
+            "Sant Kabir Nagar",
+            "Shahjahanpur",
+            "Shamli",
+            "Shrawasti",
+            "Siddharthnagar",
+            "Sitapur",
+            "Sonbhadra",
+            "Sultanpur",
+            "Unnao",
+            "Varanasi",
+          ],
+          Uttarakhand: [
+            "Almora",
+            "Bageshwar",
+            "Chamoli",
+            "Champawat",
+            "Dehradun",
+            "Haridwar",
+            "Nainital",
+            "Pauri Garhwal",
+            "Pithoragarh",
+            "Rudraprayag",
+            "Tehri Garhwal",
+            "Udham Singh Nagar",
+            "Uttarkashi",
+          ],
+          "West Bengal": [
+            "Alipurduar",
+            "Bankura",
+            "Birbhum",
+            "Cooch Behar",
+            "Dakshin Dinajpur",
+            "Darjeeling",
+            "Hooghly",
+            "Howrah",
+            "Jalpaiguri",
+            "Jhargram",
+            "Kalimpong",
+            "Kolkata",
+            "Malda",
+            "Murshidabad",
+            "Nadia",
+            "North 24 Parganas",
+            "Paschim Bardhaman",
+            "Paschim Medinipur",
+            "Purba Bardhaman",
+            "Purba Medinipur",
+            "Purulia",
+            "South 24 Parganas",
+            "Uttar Dinajpur",
+          ],
+        };
+
+        return districtData[state] || [];
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+      function addDarkmodeWidget() {
+        new Darkmode().showWidget();
+      }
+      window.addEventListener("load", addDarkmodeWidget);
+      const options = {
+        bottom: "64px", // default: '32px'
+        right: "unset", // default: '32px'
+        left: "32px", // default: 'unset'
+        time: "0.5s", // default: '0.3s'
+        mixColor: "#fff", // default: '#fff'
+        backgroundColor: "#fff", // default: '#fff'
+        buttonColorDark: "#100f2c", // default: '#100f2c'
+        buttonColorLight: "#fff", // default: '#fff'
+        saveInCookies: false, // default: true,
+        label: "🌓", // default: ''
+        autoMatchOsTheme: true, // default: true
+      };
+
+      const darkmode = new Darkmode(options);
+      darkmode.showWidget();
+    </script>
+  </body>
+</html>
