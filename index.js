@@ -52,6 +52,7 @@ app.post("/post_blog", function (req, res) {
     }
     saveBlogPost();
     console.log(newBlogPost);
+    res.send('Successful');
   } else {
     res.send("Invalid Password / Contact Server Admin");
   }
