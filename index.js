@@ -41,11 +41,13 @@ app.post("/post_blog", function (req, res) {
   console.log("Posting");
   const heading = req.body.heading;
   const description = req.body.content;
+  const image = req.body.image;
   const password = req.body.password;
   if (password === "rishav") {
     const newBlogPost = new blog({
       heading: heading,
       description: description,
+      image:image
     });
     async function saveBlogPost() {
       await newBlogPost.save();
