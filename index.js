@@ -43,7 +43,7 @@ app.post("/post_blog", function (req, res) {
   const description = req.body.content;
   const image = req.body.image;
   const password = req.body.password;
-  if (password === "rishav") {
+  if (password === "sidd12345") {
     const newBlogPost = new blog({
       heading: heading,
       description: description,
@@ -61,7 +61,7 @@ app.post("/post_blog", function (req, res) {
 });
 
 
-app.get("/campaign", function (req, res) {
+app.get("/campaign22", function (req, res) {
   res.render("campaign_form");
 });
 const campaignSchema = new mongoose.Schema({
